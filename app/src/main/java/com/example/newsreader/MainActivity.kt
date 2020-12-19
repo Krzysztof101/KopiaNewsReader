@@ -1,6 +1,7 @@
 package com.example.newsreader
 
 import android.os.Bundle
+import android.widget.Toast
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -28,5 +29,7 @@ class MainActivity : AppCompatActivity() {
         //setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        //little change I made - KG
+        Toast.makeText(this, "Welcome" , Toast.LENGTH_SHORT).show()
     }
     }
